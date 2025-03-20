@@ -58,13 +58,26 @@ section { /*perfil,educación,habilidades,educación*/
 }
 
 aside { /*hobbies, idiomas, programas*/
-    flex: 1;/* Hace que el aside ocupe menos espacio que las secciones principales.*/
+    display: flex; /*sin esto, los elementos estaban apilados en lugar de estar en columnas*/
+    flex: 1;/* Hace que el aside ocupe menos espacio que las secciones principales*/
     background-color: rgba(255, 252, 252, 0.904);/*color de fondo*/
     padding: 20px;
     margin: 10px;/*Separa el aside de otros elementos*/
     border-radius: 8px;/* Redondea las esquinas.*/
-    
+    justify-content: space-between; /* Distribuye elementos a los extremos */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    gap: 20px; /* Espaciado entre columnas */
+   
 }
+.programas-idiomas{
+    width: 30%; /* Ocupa  el porcentaje a la izquierda */
+}
+
+.hobbies {
+    width: 70%; /* Ocupa el procent aje a la  derecha */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
 .hobby-img { /*imagenes de natación y pintura*/
     width: 150px; /*tamaño de la imagen a 150x150 píxeles*/
     height: 150px; 
