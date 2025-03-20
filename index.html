@@ -1,22 +1,22 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html>  <!--Define que este documento es un HTML5, la versión más reciente del lenguaje-->
+<html lang="es"> <!--Etiqueta <html>, que envuelve todo el código de la página.lang="es" → Indica que el idioma del contenido es español-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bibliografía - María Paula González</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8"> <!--la codificación de caracteres UTF-8-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Hace que la página sea responsiva en celulares y tablets.-->
+    <title>Bibliografía - María Paula González</title><!--Texto que aparece en la pestaña del navegador.-->
+    <link rel="stylesheet" href="styles.css"><!-- Carga un archivo llamado "styles.css" para dar estilo a la página.-->
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <img src="foto.png" alt="Foto de María Paula González" class="perfil-img">
+        <div class="header-content"><!-- CONTENEDOR con class,Se puede usar en CSS para modificar el diseño-->
+            <img src="foto.png" alt="Foto de María Paula González" class="perfil-img"><!--ndica la ubicación del archivo de imagen (foto de perfil).Texto alternativo (se muestra si la imagen no carga)-->
             <div>
-                <h1>María Paula González González</h1>
+                <h1>María Paula González González</h1> <!--encabezados-->
                 <h2>Ingeniera Ambiental</h2>
             </div>
         </div>
-        <nav>
-            <ul>
+        <nav><!--Menú de navegación, con enlaces que llevan a distintas secciones de la página.Cada <a href="#seccion"> permite moverse dentro del mismo documento.-->
+            <ul> <!--lista-->
                 <li><a href="#perfil">Perfil</a></li>
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
@@ -26,19 +26,19 @@
         </nav>
     </header>
 
-    <main>
-        <section id="perfil">
+    <main><!--Agrupa el contenido más importante de la página--> 
+        <section id="perfil"><!--primera sección del documento-->
             <h2>Perfil Profesional</h2>
             <p>Ingeniera Ambiental egresada de la Universidad Distrital Francisco José de Caldas, con sólida formación en evaluación de impacto ambiental, tecnologías apropiadas, ordenamiento territorial rural y urbano, contaminación ambiental y manejo de sistemas de información geográfica.</p>
             <p>Destaco por ser una persona analítica, ética y comprometida, con alta responsabilidad y capacidad de trabajo en equipo. Me caracterizo por mi dinamismo y proactividad, cualidades que me permiten aportar eficazmente en proyectos interdisciplinarios y adaptarme a diversos entornos de trabajo.</p>
-            <p><strong>Registro Profesional:</strong> 091021-0744529</p>
+            <p><strong>Registro Profesional:</strong> 091021-0744529</p><!--parrafo con negrilla-->
         </section>
 
         <section id="educacion">
             <h2>Educación</h2>
-            <ul>
+            <ul> <!--listas en viñetas-->
                 <li>Especialización en Sistemas de Información Geográfica - Universidad Distrital Francisco José de Caldas (En proceso)</li>
-                <li>Ingeniera Ambiental - Universidad Distrital Francisco José de Caldas (Finalizado septiembre 2024)</li>
+                <li>Ingeniera Ambiental - Universidad Distrital Francisco José de Caldas (Finalizado septiembre 2024)</li><!--elemento de lista-->
                 <li>Bachiller Académico con énfasis en inglés - Colegio Inmaculado Corazón de María (Finalizado noviembre 2018)</li>
             </ul>
         </section>
@@ -61,7 +61,7 @@
         </section>
     </main>
 
-    <aside>
+    <aside> <!--complementa pero no es escencial-->
         <h3>Programas</h3>
         <ul>
             <li>ArcGIS Desktop</li>
@@ -78,7 +78,7 @@
             <li>Alemán (A2 - Cursando)</li>
         </ul>
         
-        <h3>Hobbies</h3>
+        <h3>Hobbies</h3> <!--Lista trabajos con enlaces a ubicaciones en Google Maps-->
         <ul>
             <li>Disfruto pintar, pintando esculturas gane dinero en mi pregrado</li>
             <img src="pintura.jpg" alt="pintura" class="hobby-img">
@@ -89,10 +89,16 @@
 
     </aside>
 
-    <footer id="contacto">
+    <footer id="contacto"> <!--contiene el pie de página del sitio web.-->
+    <!--Atributo id="contacto"
+
+Permite que otros elementos (como un enlace del menú) puedan hacer scroll automáticamente hasta esta sección-->    
         <h2>Contacto</h2>
         <p><strong>Celular:</strong> 3013950447</p>
         <p><strong>Email personal:</strong> <a href="mailto:mpgg1903@gmail.com">mpgg1903@gmail.com</a></p>
+<!-- <p> → Párrafo de texto.
+<strong> → Hace que "Email:" aparezca en negrita.
+<a href="mailto:mpgg1903@gmail.com"> Convierte el correo en un enlace-->
         <p> 2025 María Paula González González - Todos los derechos reservados.</p>
     </footer>
 </body>
