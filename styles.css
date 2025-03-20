@@ -1,0 +1,84 @@
+body {
+    font-family: Georgia; /* Usa la fuente Georgia para el texto del cuerpo*/
+    background-color: #fdebed; /* Asigna un color de fondo rosa claro a toda la página*/
+    margin: 0; /*Elimina márgenes*/ 
+    padding: 0;/*Elimina rellenos predeterminados del body para que los elementos ocupen todo el espacio disponible*/
+}
+
+header {
+    background-color: #faccd8; /*  Define un fondo de color rosa más fuerte para la cabecera*/
+    color: white; /* Centra el texto dentro del header*/
+    text-align: center; /*Agrega un espacio interno de 20 píxeles alrededor del contenido*/
+    padding: 20px;/*Agrega un espacio interno de 20 píxeles alrededor del contenido.*/
+    font-style: italic; /* Hace que el texto esté en cursiva */
+    font-family: "Georgia"; /* Tipo de letra */
+}
+
+.header-content { /* contendor con imagen y ingeniera ambiental, se cambia el estilo del contenedor con el class="header-content"*/
+    display: flex; /* Activa el modelo de caja flexible (flexbox) para organizar los elementos dentro del header*/
+    align-items: center;/* Alinea los elementos verticalmente en el centro*/
+    justify-content: center;/* Esto hace que todos los elementos dentro de .contenedor se coloquen en una misma fila horizontal por defecto*/
+}
+
+.perfil-img { /*Estilo de la imagen class="perfil-img"*/
+    width: 150px; /*tamaño de la imagen a 150x150 píxeles*/
+    height: 150px; 
+    border-radius: 50%;/*Convierte la imagen en un círculo.*/
+    margin-right: 10px;/*Agrega un margen derecho de 10 píxeles para separarla del texto*/
+}
+
+nav ul { /*indice*/
+    list-style: none; /*list-style: none; elimina los puntos*/
+    padding: 0;
+}
+
+nav ul li {/*lista del indice*/
+    display: inline; /*Hace que los elementos de la lista se muestren en línea en lugar de en columnas*/
+    margin: 15px; /*Agrega un margen de 15 píxeles a la izquierda y derecha de cada elemento*/
+}
+
+nav ul li a { /*enlaces en el indice*/
+    color: white;/*Define el color de los enlaces en blanco*/
+    
+    font-weight: bold;/*Hace que el texto de los enlaces esten en negrita*/
+}
+
+main {
+    display: flex;/* Activa flexbox para organizar las secciones dentro del main*/
+    margin: 20px;/*Agrega un margen de 20 píxeles*/
+}
+
+section { /*perfil,educación,habilidades,educación*/
+    flex: 2;/*Hace que las secciones ocupen más espacio que el aside en la distribución de flexbox*/
+    background-color:  rgba(255, 252, 252, 0.904);/* color lo cambien desde VSC, Asigna un color de fondo */
+    padding: 20px; /*Agrega espacio interno de 20 píxeles*/
+    margin: 10px;/*Agrega espacio entre las secciones*/
+    border-radius: 8px; /*Redondea las esquinas en 8 píxeles. los caudrados o las secciones se les redondea los bordes*/
+
+}
+
+aside { /*hobbies, idiomas, programas*/
+    flex: 1;/* Hace que el aside ocupe menos espacio que las secciones principales.*/
+    background-color: rgba(255, 252, 252, 0.904);/*color de fondo*/
+    padding: 20px;
+    margin: 10px;/*Separa el aside de otros elementos*/
+    border-radius: 8px;/* Redondea las esquinas.*/
+    
+}
+.hobby-img { /*imagenes de natación y pintura*/
+    width: 150px; /*tamaño de la imagen a 150x150 píxeles*/
+    height: 150px; 
+    border-radius: 80%;/* hace que las imagenes se vean en circulo*/
+    display: block; /*Hace que la imagen sea un bloque para que pueda centrarse.*/
+    margin: 10px auto; /*10px → Se aplica arriba y abajo (espacio entre la imagen y otros elementos).
+    auto: se aplica a los lados (izquierda y derecha), lo que hace que la imagen se centre automáticamente en su contenedor  */
+    
+}
+
+footer {/*contacto*/
+    background-color: #faccd8;/*color de fondo*/
+    color: white;/*texto de color blanco*/
+    text-align: center;/*Centra el texto del pie de página*/
+    padding: 10px;
+    margin-top: 20px;/*Agrega espacio arriba del footer.*/
+}
